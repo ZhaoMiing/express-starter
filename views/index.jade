@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  #wrapper
+    h2 userlist
+    #userList
+        table
+            thead
+                th username
+                th email
+                th delete
+            tbody
+    h2 addUser
+    #addUser
+        form#addUserForm
+          input#inputUserName(type='text', placeholder='Username', name='username')
+          input#inputUserEmail(type='text', placeholder='Email', name='email')
+          br
+          button#btnAddUser Add User
+
